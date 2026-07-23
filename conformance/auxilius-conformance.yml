@@ -1,0 +1,24 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.auxilius.co/
+summary: >-
+  Auxilius publicly states it is SOC 1 Type 2 and SOC 2 Type 2 compliant, operating
+  a single-tenant, encrypted environment with exportable, audit-ready records used by
+  Big Four auditors. No public API or developer surface is published, so cross-cutting
+  API standards (OAuth2/OIDC/RFC 9457/etc.) cannot be asserted from a spec.
+standards:
+- id: soc1-type2
+  conforms: true
+  evidence: 'Site footer/homepage: "Auxilius is SOC 1 Type 2 & SOC 2 Type 2 compliant"'
+- id: soc2-type2
+  conforms: true
+  evidence: 'Site footer/homepage: "Auxilius is SOC 1 Type 2 & SOC 2 Type 2 compliant"'
+- id: gdpr
+  conforms: true
+  evidence: Privacy policy references GDPR and UK Data Protection Laws (updated 2024-08-02)
+- id: oauth2
+  conforms: false
+  evidence: no public OpenAPI or documented OAuth surface
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: no public API spec

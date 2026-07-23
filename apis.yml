@@ -1,8 +1,27 @@
 aid: auxilius
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/auxilius.png
 name: Auxilius
-description: 'Auxilius is a company surfaced as a portfolio company of bain-capital-ventures and added
-  to the API Evangelist network as a stub for enrichment. Sector: healthcare. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Auxilius is R&D finance automation software for biopharmaceutical companies,
+  purpose-built to manage clinical trial finances. The platform automates clinical
+  expense accruals and financial close with built-in audit controls, tracks investigator
+  grant spend by mapping patient-visit data to site contracts, and models and re-forecasts
+  study spend as trial conditions change. It integrates with clinical (Medrio, Veeva),
+  financial (Oracle NetSuite, Workday, SAP, QuickBooks), procurement (Coupa, Bill.com),
+  and planning (Planful, Anaplan) systems, delivering variance analysis, automated
+  reconciliation, and audit-ready role-based approval workflows. Auxilius is SOC 1
+  Type 2 and SOC 2 Type 2 compliant and is used by 100+ biopharma companies. It is
+  backed by Bain Capital Ventures. No public developer API is currently published.'
 url: https://raw.githubusercontent.com/api-evangelist/auxilius/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +31,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Healthcare
+- Biopharma
+- Clinical Trials
+- Finance
+- Accounting
+- FinOps
+- SaaS
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +48,22 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/auxilius-domain-security.yml
 - type: Website
   url: https://www.auxilius.co/
+- type: Blog
+  url: https://www.auxilius.co/resources
+- type: Support
+  url: https://www.auxilius.co/contact
+- type: PrivacyPolicy
+  url: https://www.auxilius.co/privacy-policy
+- type: Compliance
+  url: https://www.auxilius.co/
+- type: Conformance
+  url: conformance/auxilius-conformance.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
